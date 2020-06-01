@@ -10,4 +10,12 @@ This repository is an official PyTorch implementation of DAGNN in "Towards Deepe
 * NetworkX
 * tdqm  
 
-Note that the versions of PyTorch and PyTorch Geometric should be compatable and PyTorch Geometric is related to other packages, which needs to be installed in advance. It would be easy by following the [installation instruction](https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html#).
+Note that the versions of PyTorch and PyTorch Geometric should be compatible and PyTorch Geometric is related to other packages, which needs to be installed in advance. It would be easy by following the [installation instruction](https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html#).
+
+## Run
+To reproduce our results in Table 2 and 3, run  
+```linux
+bash run.sh
+```
+
+## Results

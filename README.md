@@ -6,6 +6,12 @@ This repository is an official PyTorch implementation of DAGNN in "Towards Deepe
 
 ![](https://github.com/mengliu1998/Contents/raw/master/DeeperGNN/DTGCN.pdf)
 
+<object data="https://github.com/mengliu1998/Contents/raw/master/DeeperGNN/DTGCN.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="https://github.com/mengliu1998/Contents/raw/master/DeeperGNN/DTGCN.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://yoursite.com/the.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
 ## Requirements
 * PyTorch
 * PyTorch Geometric

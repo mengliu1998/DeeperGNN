@@ -22,3 +22,5 @@ bash run.sh
 ```
 
 ## Results
+
+![](https://github.com/mengliu1998/Contents/raw/master/DeeperGNN/results.png)

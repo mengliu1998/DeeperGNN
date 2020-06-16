@@ -8,6 +8,16 @@ For more insights, (empirical and theoretical) analysis, and discussions about d
 
 ![](https://github.com/mengliu1998/Contents/raw/master/DeeperGNN/DAGNN.jpg)
 
+## Reference
+```
+@inproceedings{liu2020towards,
+  title={Towards Deeper Graph Neural Networks},
+  author={Liu, Meng and Gao, Hongyang and Ji, Shuiwang},
+  booktitle={Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (SIGKDD), 2020.},
+  year={2020},
+  organization={ACM}
+}
+```
 
 ## Requirements
 * PyTorch

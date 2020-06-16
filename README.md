@@ -13,7 +13,7 @@ For more insights, (empirical and theoretical) analysis, and discussions about d
 @inproceedings{liu2020towards,
   title={Towards Deeper Graph Neural Networks},
   author={Liu, Meng and Gao, Hongyang and Ji, Shuiwang},
-  booktitle={Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (SIGKDD), 2020.},
+  {Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
   year={2020},
   organization={ACM}
 }

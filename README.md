@@ -35,4 +35,6 @@ bash run.sh
 
 ## Results
 
-![](https://github.com/mengliu1998/Contents/raw/master/DeeperGNN/results.png)
+![](https://github.com/mengliu1998/Contents/blob/master/DeeperGNN/result_citation.png)  
+
+![](https://github.com/mengliu1998/Contents/blob/master/DeeperGNN/result_coauthorship_copurchase.png)

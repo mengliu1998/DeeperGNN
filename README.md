@@ -4,7 +4,7 @@ This repository is an official PyTorch implementation of DAGNN in "Towards Deepe
 For more insights, (empirical and theoretical) analysis, and discussions about deeper graph neural networks, please refer to our paper.
   
   
-[Meng Liu](https://mengliu1998.github.io), [Hongyang Gao](http://people.tamu.edu/~hongyang.gao/), and [Shuiwang Ji](http://people.tamu.edu/~sji/). [Towards Deeper Graph Neural Networks (coming soon)]().  
+[Meng Liu](https://mengliu1998.github.io), [Hongyang Gao](http://people.tamu.edu/~hongyang.gao/), and [Shuiwang Ji](http://people.tamu.edu/~sji/). [Towards Deeper Graph Neural Networks](https://arxiv.org/abs/2007.09296).  
 
 ![](https://github.com/mengliu1998/Contents/raw/master/DeeperGNN/DAGNN.jpg)
 

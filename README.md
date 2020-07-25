@@ -21,7 +21,7 @@ For more insights, (empirical and theoretical) analysis, and discussions about d
 
 ## Requirements
 * PyTorch
-* PyTorch Geometric 
+* PyTorch Geometric = 1.3.1  
 * NetworkX
 * tdqm  
 

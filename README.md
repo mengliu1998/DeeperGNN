@@ -8,6 +8,10 @@ For more insights, (empirical and theoretical) analysis, and discussions about d
 
 ![](https://github.com/mengliu1998/Contents/raw/master/DeeperGNN/DAGNN.jpg)
 
+
+**Other unofficial implementation**:  
+[TensorFlow implementation in Graph Gallery](https://github.com/EdisonLeeeee/GraphGallery) 
+
 ## Reference
 ```
 @inproceedings{liu2020towards,

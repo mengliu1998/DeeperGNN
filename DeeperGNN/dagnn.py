@@ -3,6 +3,9 @@ import torch
 from torch.nn import Linear
 import torch.nn.functional as F
 from torch_geometric.nn.conv import MessagePassing, GCNConv
+from torch_scatter import scatter_add
+from torch_geometric.utils import add_remaining_self_loops
+from torch_geometric.utils.num_nodes import maybe_num_nodes
 
 from train_eval import *
 from datasets import *
@@ -24,6 +27,28 @@ parser.add_argument('--K', type=int, default=10)
 
 args = parser.parse_args()
 
+def gcn_norm(edge_index, edge_weight=None, num_nodes=None, improved=False,
+             add_self_loops=True, dtype=None):
+
+    fill_value = 2. if improved else 1.
+    num_nodes = maybe_num_nodes(edge_index, num_nodes)
+
+    if edge_weight is None:
+        edge_weight = torch.ones((edge_index.size(1), ), dtype=dtype,
+                                 device=edge_index.device)
+
+    if add_self_loops:
+        edge_index, tmp_edge_weight = add_remaining_self_loops(
+            edge_index, edge_weight, fill_value, num_nodes)
+        assert tmp_edge_weight is not None
+        edge_weight = tmp_edge_weight
+
+    row, col = edge_index[0], edge_index[1]
+    deg = scatter_add(edge_weight, col, dim=0, dim_size=num_nodes)
+    deg_inv_sqrt = deg.pow_(-0.5)
+    deg_inv_sqrt.masked_fill_(deg_inv_sqrt == float('inf'), 0)
+    return edge_index, deg_inv_sqrt[row] * edge_weight * deg_inv_sqrt[col]
+
 class Prop(MessagePassing):
     def __init__(self, num_classes, K, bias=True, **kwargs):
         super(Prop, self).__init__(aggr='add', **kwargs)
@@ -31,7 +56,9 @@ class Prop(MessagePassing):
         self.proj = Linear(num_classes, 1)
         
     def forward(self, x, edge_index, edge_weight=None):
-        edge_index, norm = GCNConv.norm(edge_index, x.size(0), edge_weight, dtype=x.dtype)
+        # edge_index, norm = GCNConv.norm(edge_index, x.size(0), edge_weight, dtype=x.dtype)
+        edge_index, norm = gcn_norm(edge_index, edge_weight, x.size(0), dtype=x.dtype)
+
 
         preds = []
         preds.append(x)

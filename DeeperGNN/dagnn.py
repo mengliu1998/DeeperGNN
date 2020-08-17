@@ -5,7 +5,6 @@ import torch.nn.functional as F
 from torch_geometric.nn.conv import MessagePassing, GCNConv
 from torch_scatter import scatter_add
 from torch_geometric.utils import add_remaining_self_loops
-from torch_geometric.utils.num_nodes import maybe_num_nodes
 
 from train_eval import *
 from datasets import *

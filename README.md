@@ -41,7 +41,7 @@ CUDA_VISIBLE_DEVICES=0 python main_ogbnarxiv.py
 ```
 |**Dataset**|**#Para**|**Validation**|**Test**|
 |-----------|--------------|---------------|----------------|
-|ogbn-arxiv|43857|72.90±0.11|72.09±0.025|  
+|ogbn-arxiv|43857|72.90±0.11|72.09±0.25|  
 
 * To reproduce our results in Table 2 and 3, run  
 ```linux

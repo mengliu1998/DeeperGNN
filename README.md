@@ -35,12 +35,18 @@ Note that the versions of PyTorch and PyTorch Geometric should be compatible and
 ~~PyTorch Geometric 1.3.1 was used in this code. If you have a newer version installed already, you may encounter an error about "GCNConv.norm" when running this code. Refer to this [issue](https://github.com/mengliu1998/DeeperGNN/issues/2) for a possible solution.~~ (2020.8.12 update: This issue has been solved in the current code. Now, our code works for PyTorch Geometric >= 1.3.1.)
 
 ## Run
-To reproduce our results in Table 2 and 3, run  
+* To evaluate DAGNN on [OGB](https://ogb.stanford.edu/docs/leader_nodeprop/) dataset ogbn-arxiv, run
+```linux
+CUDA_VISIBLE_DEVICES=0 python main_ogbnarxiv.py
+```
+|**Dataset**|**#Para**|**Validation**|**Test**|
+|-----------|--------------|---------------|----------------|
+|ogbn-arxiv|43857|72.90±0.11|72.09±0.025|  
+
+* To reproduce our results in Table 2 and 3, run  
 ```linux
 bash run.sh
 ```
-
-## Results
 
 ![](https://github.com/mengliu1998/Contents/blob/master/DeeperGNN/result_citation.png)  
 

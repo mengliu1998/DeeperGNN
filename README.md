@@ -4,7 +4,7 @@ This repository is an official PyTorch implementation of DAGNN in "Towards Deepe
 For more insights, (empirical and theoretical) analysis, and discussions about deeper graph neural networks, please refer to our paper.
   
   
-[Meng Liu](https://mengliu1998.github.io), [Hongyang Gao](http://people.tamu.edu/~hongyang.gao/), and [Shuiwang Ji](http://people.tamu.edu/~sji/). [Towards Deeper Graph Neural Networks](https://arxiv.org/abs/2007.09296).  
+[Meng Liu](https://mengliu1998.github.io), [Hongyang Gao](https://faculty.sites.iastate.edu/hygao/), and [Shuiwang Ji](http://people.tamu.edu/~sji/). [Towards Deeper Graph Neural Networks](https://www.kdd.org/kdd2020/accepted-papers/view/towards-deeper-graph-neural-networks).  
 
 ![](https://github.com/mengliu1998/Contents/raw/master/DeeperGNN/DAGNN.jpg)
 
@@ -35,7 +35,7 @@ Note that the versions of PyTorch and PyTorch Geometric should be compatible and
 ~~PyTorch Geometric 1.3.1 was used in this code. If you have a newer version installed already, you may encounter an error about "GCNConv.norm" when running this code. Refer to this [issue](https://github.com/mengliu1998/DeeperGNN/issues/2) for a possible solution.~~ (2020.8.12 update: This issue has been solved in the current code. Now, our code works for PyTorch Geometric >= 1.3.1.)
 
 ## Run
-* To evaluate DAGNN on [OGB](https://ogb.stanford.edu/docs/leader_nodeprop/) dataset ogbn-arxiv, run
+* To evaluate DAGNN on [OGB](https://ogb.stanford.edu) dataset [ogbn-arxiv](https://ogb.stanford.edu/docs/leader_nodeprop/#ogbn-arxiv), run
 ```linux
 CUDA_VISIBLE_DEVICES=0 python main_ogbnarxiv.py
 ```

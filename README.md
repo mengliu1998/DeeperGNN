@@ -9,9 +9,10 @@ For more insights, (empirical and theoretical) analysis, and discussions about d
 ![](https://github.com/mengliu1998/Contents/raw/master/DeeperGNN/DAGNN.jpg)
 
 
-**Other unofficial implementation**:  
-[PyTorch implementation in DGL](https://github.com/dmlc/dgl/tree/master/examples/pytorch/dagnn) 
-[TensorFlow implementation in GraphGallery](https://github.com/EdisonLeeeee/GraphGallery) 
+**Other unofficial implementations**:  
+An implementation in DGL [[PyTorch]](https://github.com/dmlc/dgl/tree/master/examples/pytorch/dagnn) 
+
+An implementation in GraphGallery [[TensorFlow]](https://github.com/EdisonLeeeee/GraphGallery) 
 
 ## Reference
 ```

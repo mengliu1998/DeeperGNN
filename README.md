@@ -11,7 +11,7 @@ For more insights, (empirical and theoretical) analysis, and discussions about d
 
 **Other unofficial implementations**:  
 * An implementation in DGL [[PyTorch]](https://github.com/dmlc/dgl/tree/master/examples/pytorch/dagnn) 
-* An implementation in GraphGallery [[TensorFlow]](https://github.com/EdisonLeeeee/GraphGallery/blob/master/examples/Graph_Neural_Networks/TensorFlow/DAGNN.py) 
+* An implementation in GraphGallery [[TensorFlow]](https://github.com/EdisonLeeeee/GraphGallery/tree/master/examples) 
 
 ## Reference
 ```
